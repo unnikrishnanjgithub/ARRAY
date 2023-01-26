@@ -1,0 +1,50 @@
+package arra;
+import java.util.*;
+public class addarr 
+{
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter the row");
+		int row=s.nextInt();
+		System.out.println("enter the column");
+		int col=s.nextInt();
+		System.out.println("enter the 1st array elements");
+		int arr1[][]=new int[row][col];
+		for(int i=0;i<row;i++)
+		{
+			for( int j=0;j<col;j++)
+			{
+				arr1[i][j]=s.nextInt();
+			}
+		}
+		System.out.println("enter the 2nd array elements ");
+		int arr2[][]=new int [row][col];
+		for(int i=0;i<row;i++)
+		{
+			for( int j=0;j<col;j++)
+			{
+				arr2[i][j]=s.nextInt();
+			}
+		}
+		int s1[][]=new int [row][col];
+		for(int i=0;i<row;i++)
+		{
+			for( int j=0;j<col;j++)
+			{
+			 s1[i][j]=arr1[i][j]+arr2[i][j];
+			}
+		}
+		System.out.println("the sum of matrix is");
+		for(int i=0;i<row;i++)
+		{
+			for( int j=0;j<col;j++)
+			{
+			 System.out.print(s1[i][j]);
+		    }
+			System.out.println();
+		}
+
+	}
+
+}
